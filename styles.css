@@ -2,107 +2,173 @@ body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(120deg, #fdfbfb, #ebedee);
+    background: linear-gradient(120deg, #f0f8ff, #dfe9f3);
     color: #333;
     overflow-x: hidden;
 }
+
 header {
-    background: linear-gradient(120deg, #2c3e50, #4ca1af);
+    background: linear-gradient(120deg, #4ca1af, #2c3e50);
     color: #fff;
     text-align: center;
     padding: 50px 20px;
     position: relative;
     overflow: hidden;
 }
+
 header h1 {
-    font-size: 3rem;
+    font-size: 3.5rem;
     animation: fadeInDown 1.5s ease;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.4);
 }
-header::after {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.3);
-    z-index: 1;
-}
-header h1 {
-    position: relative;
-    z-index: 2;
-}
+
 section {
     max-width: 800px;
     margin: 40px auto;
-    background: rgba(255, 255, 255, 0.9);
-    padding: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
     transform: translateY(20px);
     animation: slideIn 1.5s ease forwards;
 }
-img {
-    max-width: 100%;
-    border-radius: 10px;
-    transition: transform 0.3s ease;
-}
-img:hover {
-    transform: scale(1.05);
-}
+
 .contact {
     text-align: center;
-    background: #4ca1af;
+    background: linear-gradient(120deg, #2c3e50, #4ca1af);
     color: white;
-    padding: 30px;
+    padding: 40px;
     margin-top: 40px;
     border-radius: 15px;
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.3);
 }
-.contact h2 {
-    margin-bottom: 20px;
-    animation: fadeInUp 1s ease;
-}
-.contact p {
-    font-size: 1.2rem;
-}
+
 .contact a {
-    color: #fff;
+    background: rgba(255, 255, 255, 0.2);
+    color: white;
     text-decoration: none;
     font-weight: bold;
-    border: 2px solid #fff;
-    padding: 10px 20px;
+    padding: 15px 25px;
     border-radius: 5px;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
+
 .contact a:hover {
-    background: #fff;
-    color: #4ca1af;
+    transform: scale(1.1);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.4);
 }
-@keyframes fadeInDown {
+
+/* Gallery Styling */
+.gallery-container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 10px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 15px;
+}
+
+.gallery-item img,
+.gallery-item video {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+    background-color: black;
+}
+
+.gallery-item img:hover,
+.gallery-item video:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/* Modal Styling */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background: rgba(0, 0, 0, 0.85);
+    animation: fadeIn 0.5s ease;
+}
+
+.modal-content {
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.5);
+    animation: zoomIn 0.4s ease;
+}
+
+.modal-content img,
+.modal-content video {
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 10px;
+}
+
+.close {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+    cursor: pointer;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.close:hover,
+.close:focus {
+    color: #bbb;
+}
+
+/* Animations */
+@keyframes fadeIn {
     from {
         opacity: 0;
-        transform: translateY(-20px);
     }
     to {
         opacity: 1;
-        transform: translateY(0);
     }
 }
-@keyframes fadeInUp {
+
+@keyframes zoomIn {
     from {
-        opacity: 0;
-        transform: translateY(20px);
+        transform: scale(0.8);
     }
     to {
-        opacity: 1;
-        transform: translateY(0);
+        transform: scale(1);
     }
 }
+
 @keyframes slideIn {
     from {
         opacity: 0;
         transform: translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
     }
     to {
         opacity: 1;
