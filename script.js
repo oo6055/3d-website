@@ -1,11 +1,11 @@
 // Simulate fetching the file names from the directory (this would require server-side processing in a real environment)
 const mediaFiles = [
-    'pictures/hand.jpg',
-    'pictures/madrid.jpg',
-    'pictures/video.mp4',
-    'pictures/manhigot.jpg',
-    'pictures/owl.jpg',
-  ];
+  'pictures/manhigot.jpg',
+  'pictures/sofi.jpg',
+  'pictures/barazi.jpg',
+  'pictures/pritingVideo.mp4',
+  'pictures/handler.jpg',
+  'pictures/pritingVideo2.mp4'];
 
 
 // Gallery and Modal Elements
