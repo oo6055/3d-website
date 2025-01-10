@@ -175,3 +175,66 @@ section {
         transform: translateY(0);
     }
 }
+
+.about {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 800px;
+    margin: 40px auto;
+    background: rgba(255, 255, 255, 0.85);
+    padding: 25px;
+    border-radius: 15px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
+    animation: slideIn 1.5s ease forwards;
+}
+
+.about-logo {
+    width: 120px; /* Adjust width as needed */
+    height: auto;
+    border-radius: 10px; /* Optional: Adds rounded corners */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.about-content {
+    flex: 1; /* Ensures the text takes the remaining space */
+}
+
+.about-content h2 {
+    margin-top: 0;
+    font-size: 1.8rem;
+    color: #333;
+}
+
+.about-content p {
+    line-height: 1.6;
+    color: #555;
+}
+
+
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: linear-gradient(120deg, #4ca1af, #2c3e50);
+    color: #fff;
+    padding: 20px;
+    position: relative;
+}
+
+header h1 {
+    font-size: 3rem;
+    margin: 0;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+}
+
+.about-logo {
+    height: 80px;
+    width: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
