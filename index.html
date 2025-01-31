@@ -2,7 +2,7 @@
 <html lang="he" dir="rtl">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
     <meta name="description" content="שירותי הדפסת תלת-ממד בהתאמה אישית. אני מציע עיצובים ייחודיים, הדפסות באיכות גבוהה, ומתנות מותאמות אישית לכל אירוע.">
     <meta name="keywords" content="תלת מימד, הדפסת תלת מימד, עיצוב מודלים, מתנות מותאמות אישית, רחפנים">
     <meta name="author" content="עולם התלת מימד">
@@ -12,39 +12,347 @@
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://example.com">
     <link href="styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/pictures/favicon.ico">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> 
+    
     <title>שירותי הדפסת תלת-ממד</title>
 </head>
 <body>
     <header>
         <div class="header-content">
-            <img src="./pictures/logo.jpg" alt="Logo" class="about-logo">
+            <img src="./pictures/logo.jpg" alt="Company Logo" class="about-logo" loading="lazy">
+            <nav aria-label="Main navigation">
+                <ul class="custom-nav-bar">
+                    <li><a href="#contact-form" aria-current="page">צור קשר</a></li>
+                    <li><a href="#gallery">גלריה</a></li>
+                    <li><a href="#faq-section">שאלות נפוצות</a></li>
+                    <li><a href="#x1c-features">מדפסת ה-X1C</a></li>
+                    <li><a href="https://www.instagram.com/yali.ofek/" target="_blank" class="floating-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram Logo">
+                    </a></li>
+                    <li><a href="https://www.facebook.com/profile.php?id=61572835438077" target="_blank" class="floating-btn">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/b/b8/2021_Facebook_icon.svg" alt="Instagram Logo">
+                    </a></li>
+                    
+                </ul>
+            </nav>
         </div>
-        <div class="header-content">
-            <h1>עולם התלת מימד</h1>
-        </div>
-        
     </header>
 
-    <section class="about">
-        <div class="about-content">
-            <h2>קצת על עצמי</h2>
-            <p>אני תלמיד כיתה י"ב עם תשוקה להדפסת תלת-ממד. יש לי מדפסת X1CC, ואני מעצב מודלים תלת-ממדיים מהבית. בנוסף, אני משתתף בתחרויות רחפנים, בהן אני מעצב את המודלים בהם אנו משתמשים.</p>
+    <section class="hero">
+    <!-- Animated Background -->
+    <div class="hero-background">
+        <div class="particle-field"></div>
+        <div class="dynamic-waves"></div>
+        
+        <!-- 3D Printing Animation -->
+        <div class="printing-animation">
+            <div class="model-base"></div>
+            <div class="printing-layers">
+                <div class="layer l1"></div>
+                <div class="layer l2"></div>
+                <div class="layer l3"></div>
+                <div class="laser-effect"></div>
+            </div>
         </div>
-        <img src="./pictures/profile.jpg" alt="Logo" class="about-logo">
+    </div>
 
+    <!-- Content Container -->
+    <div class="hero-content">
+        <!-- Header Section -->
+
+        <!-- Main Content -->
+        <div class="main-content">
+            <h1 class="hero-title">
+                <span class="title-gradient">Imagine</span>
+                <span class="title-3d">Create</span>
+                <span class="title-impact">Innovate</span>
+            </h1>
+            
+
+            <!-- Enhanced CTA -->
+            <div class="cta-wrapper">
+                <a href="#contact-form" class="cta-button">
+                    תתחיל את המסע שלך כאן!
+                    <div class="cta-hover"></div>
+                    <div class="shine"></div>
+                </a>
+                <div class="cta-glow"></div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scrolling Prompt -->
+    <div class="scroll-prompt">
+        <div class="scroll-line"></div>
+        <div class="scroll-text">Explore Innovations</div>
+    </div>
+</section>
+    <div class="section-connector" data-aos="section-connect" data-aos-delay="200"></div>
+
+
+
+
+
+    <section class="x1c-features">
+        <div class="features-content">
+            <h2 data-aos="fade-right">קצת על עצמי</h2>
+            
+            <p>
+                אני תלמיד כיתה י"ב עם תשוקה עצומה לעולם ההדפסות בתלת-ממד ולעיצוב מודלים ייחודיים.  
+                ברשותי מדפסת <strong>X1CC</strong> מתקדמת, בעזרתה אני יוצר מגוון רחב של מוצרים בהתאמה אישית, תוך הקפדה על רמת דיוק ואיכות גבוהה.
+            </p>
+            <p>
+                אני מעצב ומדפיס מודלים תלת-ממדיים מהבית, ומשלב ביצירה שלי חדשנות וטכנולוגיה מתקדמת.  
+                בנוסף, אני משתתף בתחרויות רחפנים מאתגרות, בהן אני אחראי על תכנון וייצור החלקים – 
+                משלב הרעיון ועד להדפסת רכיבים פונקציונליים שמייעלים את ביצועי הרחפן בשטח.
+            </p>
+            <p>
+                <strong>הדפסות תלת-ממד</strong> הן לא רק תחביב עבורי, אלא דרך לבטא יצירתיות, דיוק והנדסה מעשית.  
+                אני שואף להמשיך לפתח את היכולות שלי ולהציע פתרונות מותאמים אישית לכל מי שמחפש מוצרים ייחודיים ומעוצבים בקפידה.
+            </p>
+            <div class="header-button">
+                <a href="#contact-form" class="info-button">לקבלת מידע נוסף</a>
+            </div>
+        </div>
+        
+        <!-- <img src="./pictures/profile.jpg" alt="Profile" class="my-pic" data-parallax="scroll" data-speed="0.3"> -->
+        <img src="./pictures/profile.jpg" alt="Logo" class="my-pic">
+
+    </section>
+    <!-- Between About Me and X1C Features -->
+<div class="gradient-line" data-aos="fade-left"></div>
+
+    <section id="x1c-features" class="x1c-features">
+        <div class="features-content">
+            <h2>מדפסת ה-X1C: חדשנות שמביאה יצירתיות לחיים</h2>
+            <p>
+                ה-X1C מבית Bambu Lab היא לא סתם מדפסת תלת-ממד — היא מהפכה של ממש בעולם ההדפסות.
+                עם טכנולוגיות מתקדמות שמחברות בין מהירות, איכות, ודיוק, המדפסת הזו מבטיחה חוויית הדפסה שאין לה תחרות.
+            </p>
+            <p>
+                בעזרת <strong>מנגנון AI מתקדם</strong> ו<em>מצלמת LIDAR</em> המובנית, המדפסת מנתחת את כמות החומר הזמין בזמן אמת, מתאימה את תהליך ההדפסה ומבטיחה שהמודל יצא מושלם כל פעם.
+                כך תוכל להתרכז ביצירתיות שלך, בעוד שהמדפסת מבטיחה תוצאה איכותית ומדויקת בכל הדפסה.
+            </p>
+            <ul>
+                <li>🎨 <strong>רב-צבעיות:</strong> יכולת להדפיס עד 4 צבעים שונים בפרויקט אחד בעזרת מערכת AMS.</li>
+                <li>⚡ <strong>מהירות גבוהה:</strong> הדפסה מהירה פי 3 מהרגיל בזכות מנגנון CoreXY חכם.</li>
+                <li>🖼️ <strong>דיוק יוצא דופן:</strong> מתאים לפרויקטים הנדסיים מורכבים או לפרטי אומנות יוקרתיים.</li>
+                <li>🌟 <strong>חומרים מגוונים:</strong> תמיכה ב-PLA, PETG, ABS, ועוד.</li>
+            </ul>
+            <p>
+                דוגמאות לדברים שניתן להדפיס:
+            </p>
+            <ul class="examples">
+                <li>🎁 מתנות מותאמות אישית, כמו מחזיקי מפתחות מעוצבים.</li>
+                <li>🏠 עיצובים לבית, כולל מיני-ריהוט ודגמי נוי צבעוניים.</li>
+                <li>🚀 חלקים מדויקים למודלים הנדסיים או פרויקטים טכנולוגיים.</li>
+            </ul>
+        </div>
+        <div class="features-image-container">
+            
+            <img src="./pictures/x1c.jpg" alt="X1C Printer" class="x1c-image">
+            <p class="image-caption">מדפסת ה-X1C - טכנולוגיה שמשנה את כללי המשחק.</p>
+        </div>
+    </section>
+
+
+    <div class="section-connector" style="transform: rotate(180deg)"></div>
+
+
+    <!-- Add this after the X1C features section -->
+<section>
+    <div class="section-spacer"></div>
+    
+    <div class="possibilities-grid">
+        <!-- Home Items -->
+        <div class="possibility-card" data-aos="fade-up">
+            <div class="card-icon">🏡</div>
+            <h3>עיצובים לבית</h3>
+            <ul class="examples">
+                <li>מחזיקי מפתחות אישיים</li>
+                <li>עמדות הטענה לרכב</li>
+                <li>עציצים מעוצבים</li>
+                <li>מארגני כלי עבודה</li>
+            </ul>
+            <div class="gradient-line"></div>
+            <a href="#contact-form" class="cta-button mini-button">עיצוב ביתי</a>
+        </div>
+
+        <!-- Gifts -->
+        <div class="possibility-card" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-icon">🎁</div>
+            <h3>מתנות מותאמות</h3>
+            <ul class="examples">
+                <li>פסלונים עם שם</li>
+                <li>תכשיטים אישיים</li>
+                <li>מחזיקי תמונות</li>
+                <li>פאזלים מותאמים</li>
+            </ul>
+            <div class="gradient-line"></div>
+            <a href="#contact-form" class="cta-button mini-button">יצירת מתנה</a>
+        </div>
+
+        <!-- Tech Projects -->
+        <div class="possibility-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-icon">🚀</div>
+            <h3>פרויקטים טכנולוגיים</h3>
+            <ul class="examples">
+                <li>חלקי רחפנים</li>
+                <li>מעטפות הגנה</li>
+                <li>אבות טיפוס</li>
+                <li>רכיבים הנדסיים</li>
+            </ul>
+            <div class="gradient-line"></div>
+            <a href="#contact-form" class="cta-button mini-button">פיתוח פרויקט</a>
+        </div>
+    </div>
+
+    <div class="floating-dots">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+    </div>
+    </section>
+
+
+
+
+    
+    <section class="x1c-features">
+        <h2>למי זה מתאים?</h2>
+        
+        <div class="windows-container">
+            <!-- מתנה רומנטית -->
+            <div class="window window-romantic active">
+                <div class="window-content">
+                    <div class="window-icon">💖</div>
+                    <h3 class="window-title">מתנה רומנטית בלי מאמץ</h3>
+                    <p class="window-text">הפתיעו את האהובה שלכם במתנה אישית ומיוחדת.<br>
+                    <em>"ללא מאמץ - אנחנו דואגים לכל מה שצריך!"</em></p>
+                    <a href="#contact-form" class="cta-button">צרו לה מתנה מושלמת</a>
+                </div>
+            </div>
+        
+            <!-- חובבים ויוצרים -->
+            <div class="window window-hobbyist">
+                <div class="window-content">
+                    <div class="window-icon">🛠️</div>
+                    <h3 class="window-title">הגשימו את העיצובים שלכם</h3>
+                    <p class="window-text">הדפסות תלת-ממד מקצועיות ליוצרים ומפתחים.<br>
+                    <em>"הדפסה מדויקת לפרויקטים המורכבים ביותר"</em></p>
+                    <a href="#contact-form" class="cta-button">התחילו את הפרויקט שלכם</a>
+                </div>
+            </div>
+        
+            <!-- מתנות לצוותים ועסקים -->
+            <div class="window window-corporate">
+                <div class="window-content">
+                    <div class="window-icon">🏆</div>
+                    <h3 class="window-title">הוקרה יוקרתית לצוותים</h3>
+                    <p class="window-text">מתנות ממותגות בהתאמה אישית.<br>
+                    <em>"איכות היא מה שמשנה כשמכירים בעבודה הקשה של הצוות שלכם"</em></p>
+                    <a href="#contact-form" class="cta-button">עצבו מתנות לצוות</a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="navigation">
+            <button class="nav-dot active"></button>
+            <button class="nav-dot"></button>
+            <button class="nav-dot"></button>
+        </div>
+    </section>
+
+
+    <section id="faq-section" class="faq-section">
+        <h2>מה שואלים אותנו בדרך כלל?</h2>
+        <p>
+            ברוכים הבאים לעולם ההדפסה בתלת-ממד! אספנו את השאלות והתשובות
+            הנפוצות ביותר כדי להעניק לכם תמונה מלאה של תהליך ההדפסה.
+        </p>
+        <div class="faq">
+            <div class="faq-item">
+                <button class="faq-question">כמה זמן ייקח לי לקבל את המודל המודפס בתלת-ממד?</button>
+                <p class="faq-answer">משך הזמן תלוי במורכבות המודל ובגודלו. בדרך כלל, ניתן לצפות להשלמת
+                    המודל תוך 2-4 ימי עסקים.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">איך לתכנן מודל מותאם בתלת-ממד?</button>
+                <p class="faq-answer">לא צריך, אם יש לך רעיון או תמונה שאתה רוצה להדפיס, פשוט שלח אותה אלינו ואנו נטפל בשאר.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">האם ניתן לשלוח קבצי STL עבור ההדפסה?</button>
+                <p class="faq-answer">כן, אנחנו מקבלים קבצי STL להדפסה. ניתן להעלות אותם דרך הטופס שלנו.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">האם אפשר להתאים אישית את המודלים?</button>
+                <p class="faq-answer">בוודאי, צוות המעצבים והמהנדסים שלנו :) עומדים לרשותכם לתכנון וייצור המודל המושלם.</p>
+            </div>
+            <div class="faq-item">
+                <button class="faq-question">מתי מתחילים לשלם?</button>
+                <p class="faq-answer">משלמים רק עם קבלת הפריט, לשלוח הודעה לא עולה כסף :)</p>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="contact-form" class="contact-form">
+        <h2>צריכים הדפסת תלת מימד לחברה? מלאו פרטים וקבלו הצעת מחיר משתלמת</h2>
+        <form action="https://formspree.io/f/xovjdzwn" method="POST">
+            <div class="form-row">
+                <input type="text" name="name" placeholder="שם" required>
+                <input type="tel" name="phone" placeholder="טלפון" required>
+            </div>
+            <div class="form-row">
+                <!-- Uploadcare File Uploader -->
+                <!-- <input type="hidden" name="file" id="file-url" value="">
+                <link
+                    rel="stylesheet"
+                    href="https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.css"
+                >
+                <script type="module">
+                    import * as UC from 'https://cdn.jsdelivr.net/npm/@uploadcare/file-uploader@1/web/uc-file-uploader-regular.min.js';
+                    UC.defineComponents(UC);
+                </script>
+    
+                <uc-config
+                    ctx-name="my-uploader"
+                    source-list="local, url, camera, dropbox"
+                    pubkey="80118599ec891c400cf2"
+                ></uc-config>
+                <uc-file-uploader-regular
+                    ctx-name="my-uploader"
+                    class="uc-light"
+                ></uc-file-uploader-regular>
+     -->
+                <input type="email" name="email" placeholder="אימייל" required>
+                <input type="text" name="massage" placeholder="מה אתם רוצים להדפיס?" required>
+            </div>
+            <button type="submit" class="submit-button">לקבלת הצעת מחיר</button>
+        </form>
     </section>
 
     <div class="gallery-container">
-        <div id="gallery" class="gallery"></div>
+        <h2 class="section-title">גלריית עבודות שלנו</h2>
+        <div id="gallery" class="gallery">
+            <!-- Images will be inserted here by JS -->
+        </div>
     </div>
 
     <section class="contact">
         <h2>בין אם זה ליום האהבה, מתנה מתחשבת לחברים, או משהו מיוחד לעובדים שלך, 
             צור איתי קשר כדי להגשים את הרעיונות שלך!</h2>
-        <p>
-            <strong>לפרטים:</strong> <a href="tel:0535331340" >053-533-1340</a>
+        <p class="contact-details"></p>
+            <strong>לפרטים:</strong> <a href="tel:0535331340" class="contact-link">053-533-1340</a>
         </p>
     </section>
+
+
+    
+    
 
     <!-- Modal -->
     <div id="modal" class="modal">
